@@ -1,0 +1,9 @@
+Color Scheme for 035642 Dark Green
+
+
+126589 Dark blue
+529CBC Light blue
+63231C Brown red
+891225 Wine red
+
+93B7C7 Lighter blue than "Light blue"

@@ -1,0 +1,17 @@
+.App {
+    color: #529CBC;
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+
+header {
+    color: #035642;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    text-align: left;
+}
+
+footer {
+    color: #44829D;
+    font-style: italic;
+}

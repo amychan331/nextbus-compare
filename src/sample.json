@@ -1,0 +1,203 @@
+    {
+        "ServiceDelivery":
+        {
+            "ResponseTimestamp": "2017-02-27T01:45Z",
+            "ProducerRef": "sf-muni",
+            "Status": true,
+            "StopMonitoringDelivery":
+            {
+                "version": "1.4",
+                "ResponseTimestamp": "2017-02-27T01:45Z",
+                "Status": true,
+                "MonitoredStopVisit":
+                [
+                    {
+                        "RecordedAtTime": "2017-02-27T01:44:17Z",
+                        "MonitoringRef": "17778",
+                        "MonitoredVehicleJourney":
+                        {
+                            "LineRef": "KT",
+                            "DirectionRef": "Inbound",
+                            "FramedVehicleJourneyRef":
+                            {
+                                "DataFrameRef": "2017-02-26",
+                                "DatedVehicleJourneyRef": "7456638"
+                            },
+                            "PublishedLineName": "KT-Ingleside Third Street",
+                            "OperatorRef": "sf-muni",
+                            "Monitored": true,
+                            "VehicleLocation":
+                            {
+                                "Longitude": -122.45031,
+                                "Latitude": 37.723
+                            },
+                            "MonitoredCall":
+                            {
+                                "StopPointRef": "17778",
+                                "VisitNumber": "1",
+                                "StopPointName": "San Jose and Geneva",
+                                "VehicleAtStop": "false",
+                                "AimedArrivalTime": "2017-02-27T01:54:00Z",
+                                "AimedDepartureTime": "2017-02-27T01:54:00Z"
+                            }
+                        }
+                    },
+                    {
+                        "RecordedAtTime": "2017-02-27T01:44:17Z",
+                        "MonitoringRef": "17778",
+                        "MonitoredVehicleJourney":
+                        {
+                            "LineRef": "J",
+                            "DirectionRef": "Inbound",
+                            "FramedVehicleJourneyRef":
+                            {
+                                "DataFrameRef": "2017-02-26",
+                                "DatedVehicleJourneyRef": "7456377"
+                            },
+                            "PublishedLineName": "J-Church",
+                            "OperatorRef": "sf-muni",
+                            "Monitored": true,
+                            "VehicleLocation":
+                            {
+                                "Longitude": -122.44616,
+                                "Latitude": 37.71998
+                            },
+                            "MonitoredCall":
+                            {
+                                "StopPointRef": "17778",
+                                "VisitNumber": "1",
+                                "StopPointName": "San Jose and Geneva",
+                                "VehicleAtStop": "false",
+                                "AimedArrivalTime": "2017-02-27T02:04:00Z",
+                                "AimedDepartureTime": "2017-02-27T02:04:00Z"
+                            }
+                        }
+                    },
+                    {
+                        "RecordedAtTime": "2017-02-27T01:44:17Z",
+                        "MonitoringRef": "17778",
+                        "MonitoredVehicleJourney":
+                        {
+                            "LineRef": "KT",
+                            "DirectionRef": "Inbound",
+                            "FramedVehicleJourneyRef":
+                            {
+                                "DataFrameRef": "2017-02-26",
+                                "DatedVehicleJourneyRef": "7456639"
+                            },
+                            "PublishedLineName": "KT-Ingleside Third Street",
+                            "OperatorRef": "sf-muni",
+                            "Monitored": true,
+                            "VehicleLocation":
+                            {
+                                "Longitude": -122.4543,
+                                "Latitude": 37.72346
+                            },
+                            "MonitoredCall":
+                            {
+                                "StopPointRef": "17778",
+                                "VisitNumber": "1",
+                                "StopPointName": "San Jose and Geneva",
+                                "VehicleAtStop": "false",
+                                "AimedArrivalTime": "2017-02-27T02:06:00Z",
+                                "AimedDepartureTime": "2017-02-27T02:06:00Z"
+                            }
+                        }
+                    },
+                    {
+                        "RecordedAtTime": "2017-02-27T01:44:17Z",
+                        "MonitoringRef": "17778",
+                        "MonitoredVehicleJourney":
+                        {
+                            "LineRef": "J",
+                            "DirectionRef": "Inbound",
+                            "FramedVehicleJourneyRef":
+                            {
+                                "DataFrameRef": "2017-02-26",
+                                "DatedVehicleJourneyRef": "7456378"
+                            },
+                            "PublishedLineName": "J-Church",
+                            "OperatorRef": "sf-muni",
+                            "Monitored": true,
+                            "VehicleLocation":
+                            {
+                                "Longitude": -122.42751,
+                                "Latitude": 37.752
+                            },
+                            "MonitoredCall":
+                            {
+                                "StopPointRef": "17778",
+                                "VisitNumber": "1",
+                                "StopPointName": "San Jose and Geneva",
+                                "VehicleAtStop": "false",
+                                "AimedArrivalTime": "2017-02-27T02:16:00Z",
+                                "AimedDepartureTime": "2017-02-27T02:16:00Z"
+                            }
+                        }
+                    },
+                    {
+                        "RecordedAtTime": "2017-02-27T01:44:17Z",
+                        "MonitoringRef": "17778",
+                        "MonitoredVehicleJourney":
+                        {
+                            "LineRef": "KT",
+                            "DirectionRef": "Inbound",
+                            "FramedVehicleJourneyRef":
+                            {
+                                "DataFrameRef": "2017-02-26",
+                                "DatedVehicleJourneyRef": "7456638"
+                            },
+                            "PublishedLineName": "KT-Ingleside Third Street",
+                            "OperatorRef": "sf-muni",
+                            "Monitored": true,
+                            "VehicleLocation":
+                            {
+                                "Longitude": -122.47141,
+                                "Latitude": 37.7353
+                            },
+                            "MonitoredCall":
+                            {
+                                "StopPointRef": "17778",
+                                "VisitNumber": "1",
+                                "StopPointName": "San Jose and Geneva",
+                                "VehicleAtStop": "false",
+                                "AimedArrivalTime": "2017-02-27T02:18:00Z",
+                                "AimedDepartureTime": "2017-02-27T02:18:00Z"
+                            }
+                        }
+                    },
+                    {
+                        "RecordedAtTime": "2017-02-27T01:44:17Z",
+                        "MonitoringRef": "17778",
+                        "MonitoredVehicleJourney":
+                        {
+                            "LineRef": "J",
+                            "DirectionRef": "Inbound",
+                            "FramedVehicleJourneyRef":
+                            {
+                                "DataFrameRef": "2017-02-26",
+                                "DatedVehicleJourneyRef": "7456377"
+                            },
+                            "PublishedLineName": "J-Church",
+                            "OperatorRef": "sf-muni",
+                            "Monitored": true,
+                            "VehicleLocation":
+                            {
+                                "Longitude": -122.42697,
+                                "Latitude": 37.75731
+                            },
+                            "MonitoredCall":
+                            {
+                                "StopPointRef": "17778",
+                                "VisitNumber": "1",
+                                "StopPointName": "San Jose and Geneva",
+                                "VehicleAtStop": "false",
+                                "AimedArrivalTime": "2017-02-27T02:28:00Z",
+                                "AimedDepartureTime": "2017-02-27T02:28:00Z"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }

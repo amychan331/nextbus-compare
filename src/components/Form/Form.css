@@ -1,0 +1,48 @@
+form {
+    text-align: center;
+}
+
+#inputBox {
+    display: block;
+    margin-left: 30%;
+    text-align: left;
+    width: 50%;
+}
+
+label {
+    margin-top: 5px;
+}
+
+.error {
+    color: red;
+    font-size: .75em;
+    font-style: italic;
+    font-weight: none;
+    margin-left: 5px;
+}
+
+.msg {
+    font-style: italic;
+    text-align: center;
+}
+
+input[name="submit"] {
+    background-color: #529CBC;
+    border: 1px solid #93B7C7;
+    border-radius: 5px;
+    clear: both;
+    color: white;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 10px;
+    text-shadow: 1px 1px #93B7C7;
+}
+
+input[disabled] {
+    background-color: #E5E4E2;
+    border: 1px solid #E5E4E2;
+    color: #D3D3D3;
+    text-shadow: 1px 1px #E5E4E2;
+}
