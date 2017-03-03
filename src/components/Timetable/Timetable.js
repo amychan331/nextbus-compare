@@ -15,7 +15,7 @@ class Timetable extends Component {
     const stopCode = this.props.stopCode;
 
     return (
-      fetch(`http://api.511.org/transit/StopMonitoring?api_key=${process.env.REACT_APP_API_KEY}&agency=${agency}&stopCode=${stopCode}`, {
+      fetch(`https://api.511.org/transit/StopMonitoring?api_key=${process.env.REACT_APP_API_KEY}&agency=${agency}&stopCode=${stopCode}`, {
         method: 'GET',
       }).then(res => {
         return res.json()
@@ -26,12 +26,14 @@ class Timetable extends Component {
           let vechicles = line.map(vechicles => {return vechicles.MonitoredVehicleJourney});
 
           // Output data for each vechicle
-          vechicles.map( vechicle => {
+          let vechicle_data = vechicles.map( vechicle => {
             console.log("Line: " + vechicle.PublishedLineName);
             console.log("Stop Location: " + vechicle.MonitoredCall.StopPointName);
             let diffTime = parseInt(( new Date(vechicle.MonitoredCall.AimedArrivalTime) - new Date(data.ServiceDelivery.StopMonitoringDelivery.MonitoredStopVisit[0].RecordedAtTime) ) / 60000, 10);
             console.log("Estimated Arrival Time: " + diffTime + " min");
+            return {"line":vechicle.PublishedLineName, "location":vechicle.MonitoredCall.StopPointName, "time":diffTime};
           })
+          this.setState({cell: vechicle_data});
         }
         catch(e) {
           this.setState({msg: "Transit station with a stop code of " + stopCode + " either does not exist or is not running."});
@@ -53,7 +55,9 @@ class Timetable extends Component {
     if (this.state.cell) {
       return (
         <section id="timeTable">
-          {this.state.cell.map((vechicle) => {return <p key={vechicle}>{vechicle}</p>})}
+          <section className="timeCell">
+            {this.state.cell.map((vechicle, i) => {return <p key={i}>{vechicle.line} at {vechicle.location}: {vechicle.time} min</p>})}
+          </section>
         </section>
       )
     }
