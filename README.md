@@ -16,9 +16,12 @@ Real-time input validation has been implemented, the React way. Very fun to do.
 ##Image
 Input form before data submission, with error message on display:
 <kbd>![Input Form with Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_no_input_output.png)</kbd>
+
 The time chart displaying 3 different station stop, one of which does not exist:
 <kbd>![Regular Output](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_output.png)</kbd>
+
 Error message for duplicate stop code entry:
 <kbd>![Duplicate Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_duplicate_err.png)</kbd>
+
 Error message for maxing out input submission:
 <kbd>![Maxed Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_max_input_err.png)</kbd>
