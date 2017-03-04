@@ -14,7 +14,7 @@ Real-time input validation has been implemented, the React way. Very fun to do.
 * Do some web accessibility testing such  as tab navigation and screen reader test to be sure.
 
 ##Image
-![Input Form with Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_no_input_output.png)
-![Regular Output](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_output.png)
-![Duplicate Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_duplicate_err.png)
-![Maxed Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_max_input_err.png)
+![Input Form with Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_no_input_output.png | width=75%)
+![Regular Output](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_output.png | width=75%)
+![Duplicate Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_duplicate_err.png | widthv)
+![Maxed Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_max_input_err.png | width=75%)
