@@ -1,6 +1,12 @@
 main {
     border: 2px dashed #063a2f;
     height: 90%;
-    padding: 10px;
+    padding: 10px 0;
     text-align: left;
+}
+
+main .info {
+    color: #589EC1;
+    margin: 5px;
+    text-align: center;
 }

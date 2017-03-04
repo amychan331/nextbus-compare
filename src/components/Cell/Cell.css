@@ -1,10 +1,15 @@
 .timeCell {
     border: 1px dashed #b8ece1;
+    display: inline-block;
     background-color: #e7f8f5;
     color: #145D82;
-    margin-top: 10px;
+    margin: 5px;
     padding: 5px;
     text-align: center;
+    overflow: hidden;
+    vertical-align: top;
+    width: 30%;
+
 }
 
 .stop {
@@ -14,6 +19,5 @@
 
 .minutes {
     font-size: 1.25em;
-    font-weight: bold;
     margin-top: 2px;
 }

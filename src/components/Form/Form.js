@@ -10,7 +10,8 @@ class Form extends Component {
       stopCode: '',
       err_agency: '',
       err_stopCode: '',
-      submitted: false,
+      err_submission: '',
+      submit_list: [],
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -38,13 +39,26 @@ class Form extends Component {
     };
 
     this.setState({
-      [name]: value
+      [name]: value,
+      err_submission: '',
     });
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({submitted: true});
+
+    const enteredCode = this.state.stopCode;
+    if (this.state.submit_list.find(element => element.stopCode === this.state.stopCode)) {
+      this.setState({err_submission: 'The same code was input earlier. Try a different one.'});
+    } else {
+      if (this.state.submit_list.length < 3) {
+        let submit_list = this.state.submit_list.slice()
+        submit_list.push({'agency': this.state.agency, 'stopCode': enteredCode})
+        this.setState({submit_list: submit_list});
+      } else {
+        this.setState({err_submission: 'Only 3 stops are allowed on one table.'});
+      }
+    }
   }
 
   render() {
@@ -67,9 +81,10 @@ class Form extends Component {
         <input id="stopCode" name="stopCode" type="text" placeholder="Stop code" maxLength="5" value={this.state.stopCode} onChange={this.handleChange} aria-describedby="stopCode_error" required/>
         <span id="err_stopCode" className="error" role="alert">{this.state.err_stopCode}</span>
         </div>
-        <input disabled={!isEnabled} type="submit" name="submit" value="Submit" />
+        <input disabled={!isEnabled} type="submit" name="submit" value="Submit" aria-describedby="err_submission"/>
+        <p id="err_submission" className="error" role="alert">{this.state.err_submission}</p>
 
-        {this.state.submitted ? <Timetable agency={this.state.agency} stopCode={this.state.stopCode} /> : <p className="msg">No stop code was entered</p>}
+        <Timetable submission={this.state.submit_list} />
       </form>
     );
   }
