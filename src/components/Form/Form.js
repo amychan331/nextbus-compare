@@ -27,21 +27,19 @@ class Form extends Component {
       if(value.length < 1) {
         this.setState({err_agency: "Error: Select an agency"});
       } else {
-        this.setState({err_agency: ''})
+        if (this.state.err_agency.length > 0 ) {this.setState({err_agency: ''})};
       }
     };
     if (name === "stopCode") {
       if(value.toLowerCase() !== value.toUpperCase()) {
         this.setState({err_stopCode: "Error: Numbers only"});
       } else {
-        this.setState({err_stopCode: ''})
+        if (this.state.err_stopCode.length > 0 ) {this.setState({err_stopCode: ''})};
       }
     };
 
-    this.setState({
-      [name]: value,
-      err_submission: '',
-    });
+    //Before setState, make sure there is no leftover error from previous input submission.
+    (this.state.err_submission.length > 0 ) ? this.setState({[name]: value, err_submission: ''}) : this.setState({[name]: value})
   }
 
   handleSubmit(e) {
