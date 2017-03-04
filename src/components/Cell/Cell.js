@@ -25,14 +25,14 @@ class Cell extends Component {
           // Get data from NextBus API:
           const line = data.ServiceDelivery.StopMonitoringDelivery.MonitoredStopVisit;
           const vechicles = line.map(vechicles => {return vechicles.MonitoredVehicleJourney});
-          // Get data for each vechicle
+          // Get data for each vechicle:
           const vechicle_data = vechicles.map( vechicle => {
             let diffTime = parseInt(( new Date(vechicle.MonitoredCall.AimedArrivalTime) - new Date(data.ServiceDelivery.StopMonitoringDelivery.MonitoredStopVisit[0].RecordedAtTime) ) / 60000, 10);
             return {"line":vechicle.PublishedLineName, "time":diffTime};
           });
-          // Get station location
+          // Grab station location separately, since all vechicles.MonitoredCall have same location and the cell only needs it once:
           const location = vechicles[0].MonitoredCall.StopPointName;
-          // Set data
+          // Set data and location:
           this.setState({data_list: vechicle_data, location: location});
         }
         catch(e) {
@@ -53,7 +53,7 @@ class Cell extends Component {
         </section>
       )
     }
-    // Return empty message before componentWillMount and error message during render
+    // Returns empty message before componentWillMount and error message during render.
     else {
       return (
         <section className="timeCell">

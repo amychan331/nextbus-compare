@@ -45,13 +45,12 @@ class Form extends Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    const enteredCode = this.state.stopCode;
     if (this.state.submit_list.find(element => element.stopCode === this.state.stopCode)) {
       this.setState({err_submission: 'The same code was input earlier. Try a different one.'});
     } else {
       if (this.state.submit_list.length < 3) {
         let submit_list = this.state.submit_list.slice()
-        submit_list.push({'agency': this.state.agency, 'stopCode': enteredCode})
+        submit_list.push({'agency': this.state.agency, 'stopCode': this.state.stopCode})
         this.setState({submit_list: submit_list});
       } else {
         this.setState({err_submission: "Please only enter up to 3 station stops."});

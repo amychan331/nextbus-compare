@@ -40,6 +40,10 @@ input[name="submit"] {
     text-shadow: 1px 1px #93B7C7;
 }
 
+input[name="submit"]:hover:not([disabled]) {
+    background-color: #145D82;
+}
+
 input[disabled] {
     background-color: #E5E4E2;
     border: 1px solid #E5E4E2;
