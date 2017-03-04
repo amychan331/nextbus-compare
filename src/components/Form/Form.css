@@ -27,8 +27,8 @@ label {
 }
 
 input[name="submit"] {
-    background-color: #529CBC;
-    border: 1px solid #93B7C7;
+    background-color: #1C82B5;
+    border: 1.5px solid #93B7C7;
     border-radius: 5px;
     clear: both;
     color: white;

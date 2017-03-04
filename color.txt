@@ -1,3 +1,36 @@
+Color Scheme for 1C82B5 Dark Blue
+
+Analogous (Blue->Green):
+* 142DC2
+* 155FCC
+* 15BFCC
+* 14C29E
+
+Complementary:
+* 084868 Dark Blue
+* 41C0FF Light Blue
+* 683A00 Dark Brown
+* B5711C Light Brown
+
+Triad:
+* 064868 Dark Blue
+* C13140 Red
+* 827E07 Green Yellow
+* 68650B Darker Green Yellow
+
+Monochromatic:
+082635 Dark Navy Blue
+589EC1 Light Blue
+182C35 Dark Navy Blue
+145D82 Med Blue
+
+From DuckDuckGo:
+Complementary: B54E1B Red
+Analogous: 1B35B5 Dark Blue 1BB59B Aqua Green
+Light Aqua related to Aqua 14C29E: e7f8f5
+
+-----------------------------------
+OLD COLOR
 Color Scheme for 035642 Dark Green
 
 

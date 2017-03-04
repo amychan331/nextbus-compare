@@ -6,9 +6,9 @@ The NextBus app used to do, but not any more. When a station have stop code on d
 The programming goal is to try out the NextBus API and to practice React, which I just learn.
 
 ##Progress:
-For now, the console logs out the data correctly. As always, I have implemented web accessibility and web security best practices. Real-time input validation has been implemented, the React way. Very fun to do.
+For now, the console logs out the data correctly. I am also able to output them. As always, I have basic implemented web accessibility and web security best practices. Real-time input validation has been implemented, the React way. Very fun to do.
 
 ##To-Do:
-* Transform the data that is being console logged into actual displayed output.
-* Allow user to add multiple transit line (5 max) so they can compare them (hence the name Nextbus Compare)
+* Style the output data.
+* Allow user to add multiple transit line (3 max) so they can compare them (hence the name Nextbus Compare).
 * Allow user to remove transit line.

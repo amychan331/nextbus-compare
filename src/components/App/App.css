@@ -1,17 +1,21 @@
 .App {
-    color: #529CBC;
+    color: #1C82B5;
     margin: auto;
     text-align: center;
     width: 75%;
 }
 
 header {
-    color: #035642;
+    color: #C13140;
     font-family: 'Georgia', 'Times New Roman', serif;
     text-align: left;
 }
 
+.subHeader {
+    color: #1C82B5;
+}
+
 footer {
-    color: #44829D;
+    color: #589EC1;
     font-style: italic;
 }
