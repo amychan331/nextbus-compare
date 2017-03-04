@@ -56,7 +56,7 @@ class Form extends Component {
         submit_list.push({'agency': this.state.agency, 'stopCode': enteredCode})
         this.setState({submit_list: submit_list});
       } else {
-        this.setState({err_submission: 'Only 3 stops are allowed on one table.'});
+        this.setState({err_submission: "Please only enter up to 3 station stops."});
       }
     }
   }
