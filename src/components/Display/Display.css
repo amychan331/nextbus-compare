@@ -10,3 +10,13 @@ main .info {
     margin: 5px;
     text-align: center;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width : 320px) and (max-width : 768px) {
+    main {
+        padding: 4px 2px;
+    }
+    main .info {
+        text-align: left;
+    }
+}

@@ -21,3 +21,10 @@
     font-size: 1.25em;
     margin-top: 2px;
 }
+
+/* Smartphones (portrait and landscape) iPads (landscape) ----------- */
+@media screen and (min-width : 320px) and (max-width : 768px) {
+    .timeCell {
+        width: 90%;
+    }
+}

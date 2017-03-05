@@ -20,3 +20,17 @@ footer {
     color: #589EC1;
     font-style: italic;
 }
+
+/* Smartphones ----------- */
+@media screen and (min-width : 320px) {
+    .App {
+        width: 95%;
+    }
+}
+
+/* Tablet ----------- */
+@media screen and (min-width : 768px) {
+    .App {
+        width: 90%;
+    }
+}

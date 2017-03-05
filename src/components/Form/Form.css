@@ -50,3 +50,24 @@ input[disabled] {
     color: #D3D3D3;
     text-shadow: 1px 1px #E5E4E2;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width : 320px) and (max-width : 768px) {
+    #inputBox {
+        margin-left: 5%;
+        text-align: center;
+        width: 90%;
+    }
+    label {
+        display: block;
+        clear: both;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+    #inputBox {
+        margin-left: 25%;
+        width: 75%;
+    }
+}
