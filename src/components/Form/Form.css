@@ -62,6 +62,10 @@ input[disabled] {
         display: block;
         clear: both;
     }
+    .error {
+        display: block;
+        clear: both;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
