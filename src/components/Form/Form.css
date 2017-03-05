@@ -59,12 +59,12 @@ input[disabled] {
         width: 90%;
     }
     label {
-        display: block;
         clear: both;
+        display: block;
     }
     .error {
-        display: block;
         clear: both;
+        display: block;
     }
 }
 
