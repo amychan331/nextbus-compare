@@ -16,7 +16,7 @@ function Header() {
   return (
     <header>
       <h1>NextBus Compare</h1>
-      <h4 className="subHeader">At a transit station but no idea what street you are on? No problem! Check when the next trasit come by the station code right in front of you!</h4>
+      <p className="subHeader">At a transit station but no idea what street you are on? No problem! Check when the next transit come by the station code right in front of you!</p>
     </header>
   )
 }

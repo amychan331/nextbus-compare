@@ -66,7 +66,7 @@ class Form extends Component {
       <form onSubmit={this.handleSubmit}>
         <div id="inputBox">
         <label htmlFor="agency"><b>Transit Agency: </b></label>
-        <select id="agency" name="agency" value={this.state.agency} onChange={this.handleChange} aria-describedby="err_agency" autoFocus required>
+        <select id="agency" name="agency" value={this.state.agency} onChange={this.handleChange} aria-describedby="err_agency" autoFocus aria-required="true">
           <option value="">None</option>
           <option value="sf-muni">Muni</option>
           <option value="bart">BART</option>
@@ -75,7 +75,7 @@ class Form extends Component {
         <span id="err_agency" className="error" role="alert">{this.state.err_agency}</span>
         <br />
         <label htmlFor="stopCode"><b>Enter bus stop code: </b></label>
-        <input id="stopCode" name="stopCode" type="text" placeholder="Stop code" maxLength="5" value={this.state.stopCode} onChange={this.handleChange} aria-describedby="stopCode_error" required/>
+        <input id="stopCode" name="stopCode" type="text" placeholder="Stop code" maxLength="5" value={this.state.stopCode} onChange={this.handleChange} aria-describedby="stopCode_error" aria-required="true"/>
         <span id="err_stopCode" className="error" role="alert">{this.state.err_stopCode}</span>
         </div>
         <input disabled={!isEnabled} type="submit" name="submit" value="Submit" aria-describedby="err_submission"/>

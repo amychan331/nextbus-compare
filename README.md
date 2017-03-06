@@ -10,7 +10,6 @@ As always, I have basic implemented web accessibility and web security best prac
 Real-time input validation has been implemented, the React way. Very fun to do.
 
 ##To-Do
-* Make it mobile-friendly.
 * Do some web accessibility testing such  as tab navigation and screen reader test to be sure.
 
 ##Image

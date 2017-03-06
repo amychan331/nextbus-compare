@@ -13,7 +13,8 @@ header {
 
 .subHeader {
     color: #1C82B5;
-    margin-bottom: 10px;
+    font-size: 1.25em;
+    margin-bottom: 20px;
 }
 
 footer {

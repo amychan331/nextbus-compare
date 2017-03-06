@@ -48,8 +48,8 @@ class Cell extends Component {
     if (this.state.data_list.length !== 0) {
       return (
         <section className="timeCell">
-          <p className="stop">Stop {this.props.stopCode}: {this.state.location}</p>
-            {this.state.data_list.map((vechicle, i) => {return <p key={i}>{vechicle.line}: <br /><strong className="minutes">{vechicle.time} min</strong></p>})}
+          <h3 className="stop">Stop {this.props.stopCode}: {this.state.location}</h3>
+            {this.state.data_list.map((vechicle, i) => {return <p key={i}>{vechicle.line}: <br /><strong className="minutes">{vechicle.time} minutes</strong></p>})}
         </section>
       )
     }
