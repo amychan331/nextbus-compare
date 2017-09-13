@@ -20,4 +20,4 @@ Error message for duplicate stop code entry:
 <kbd>![Duplicate Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_duplicate_err.png)</kbd>
 
 Error message for maxing out input submission:
-<kbd>![Maxed Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_max_input_err.png)</kbd>
+<kbd>![Maxed Input Error](https://github.com/amychan331/nextbus-compare/blob/master/public/img/NC_max_input_err.png)</kbd># nextbus-compare-v2
