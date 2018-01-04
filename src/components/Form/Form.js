@@ -60,7 +60,7 @@ class Form extends Component {
 
   render() {
     // Validation to determine if submit button should be enable
-    const isEnabled = this.state.agency.length > 0 && parseFloat(this.state.stopCode) == this.state.stopCode;
+    const isEnabled = this.state.agency.length > 0 && parseInt(this.state.stopCode, 10) == this.state.stopCode;
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -68,9 +68,9 @@ class Form extends Component {
         <label htmlFor="agency"><b>Transit Agency: </b></label>
         <select id="agency" name="agency" value={this.state.agency} onChange={this.handleChange} aria-describedby="err_agency" autoFocus aria-required="true">
           <option value="">None</option>
-          <option value="sf-muni">Muni</option>
-          <option value="bart">BART</option>
-          <option value="caltrain">Caltrain</option>
+          <option value="SF">Muni</option>
+          <option value="BA">BART</option>
+          <option value="CT">Caltrain</option>
         </select>
         <span id="err_agency" className="error" role="alert">{this.state.err_agency}</span>
         <br />
